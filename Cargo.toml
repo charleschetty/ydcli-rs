@@ -1,0 +1,23 @@
+[package]
+name = "ydcli-rs"
+version = "0.1.0"
+edition = "2021"
+
+
+
+[dependencies]
+reqwest = { version = "0.12", features = ["blocking","json"] }
+scraper = "0.20.0"
+
+
+
+[profile.release]
+opt-level = 3
+strip = true  # Automatically strip symbols from the binary.
+lto = "fat"
+panic = "abort"
+codegen-units = 1
+
+[build]
+rustflags = ["-C", "target-cpu=native"]
+
