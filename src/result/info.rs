@@ -143,6 +143,9 @@ impl Example {
                         .join("")
                 })
                 .collect();
+            if meaning_all.len() ==0 {
+                continue;
+            }
             let len_of_meaning = meaning_all[0].len();
             let _meaning = &meaning_all[0][len_of_head..len_of_meaning];
 
