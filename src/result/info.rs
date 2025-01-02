@@ -140,7 +140,7 @@ impl Example {
                         .text()
                         .filter_map(trim_str)
                         .collect::<Vec<String>>()
-                        .join("")
+                        .join(" ")
                 })
                 .collect();
             if meaning_all.len() ==0 {
