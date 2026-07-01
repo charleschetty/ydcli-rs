@@ -37,8 +37,13 @@ ydcli --version
 
 - [ ] 简明模式
 - [ ] 缓存
-- [ ] 支持中文查询
+- [x] 支持中文查询
+- [x] 零外部依赖
 
 ## 参考
 
 [无道词典](https://github.com/ChestnutHeng/Wudao-dict) · [charcoal](https://github.com/LighghtEeloo/charcoal)
+
+---
+
+> **AI 声明**：`043c228`（fix head issue）之后的所有 commit 均由 Claude (Anthropic) 生成。
