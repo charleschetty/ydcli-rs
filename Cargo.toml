@@ -2,12 +2,13 @@
 name = "ydcli-rs"
 version = "0.1.0"
 edition = "2021"
-
-
+description = "有道词典命令行版 - Youdao Dictionary CLI"
+repository = "https://github.com/charleschetty/ydcli-rs"
+license = "MIT"
+rust-version = "1.80"
 
 [dependencies]
-reqwest = { version = "0.12", features = ["blocking","json"] }
-scraper = "0.20.0"
+# 零外部依赖 —— 全部使用 Rust 标准库
 
 
 
@@ -17,7 +18,3 @@ strip = true  # Automatically strip symbols from the binary.
 lto = "fat"
 panic = "abort"
 codegen-units = 1
-
-[build]
-rustflags = ["-C", "target-cpu=native"]
-
